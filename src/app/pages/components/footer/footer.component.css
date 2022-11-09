@@ -1,0 +1,14 @@
+footer{
+    background: #000428;  /* fallback for old browsers */
+/*     background: -webkit-linear-gradient(to right, #1d519a, #000428);
+    background: linear-gradient(to right, #1d519a, #000428); */
+    min-height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.content-footer p{
+    color: #fff;
+}

@@ -1,0 +1,64 @@
+.container-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    transition: all 800ms ease-in-out;
+    
+}
+
+.main-box{
+    width: 200px;
+    height: 120px;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    flex: 1;
+    flex-basis: 200px;
+    max-height: 120px;
+    min-width: 200px;
+    
+}
+
+.container-cards .card{
+    overflow: hidden;
+    /* width: 150px; */
+    display: flex;
+    flex-direction: row;
+    height: 120px;
+    margin: .8rem;
+
+    
+}
+
+.content-box{
+    width: auto;
+    color: #000;
+    transition-property: opacity;
+    transition-duration: 300ms;
+    
+}
+
+.container-cards .card.show .content-box p{
+    width: 100%;
+    padding: 1rem;
+}
+.content-box p{
+    color: #000;
+    transition-property: opacity;
+    transition-duration: 800ms;
+    transition-delay: .2s;
+    width: 0;
+    opacity: 0;
+}
+
+.container-cards .card.show{
+    width: 100%;
+    order: -1;
+}
+
+.container-cards .card.show p{
+    opacity: 1;
+}

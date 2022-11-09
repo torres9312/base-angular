@@ -1,0 +1,23 @@
+<div id="content" class="content-navbar">
+    <nav class="navbar navbar-light shadow-sm" [ngClass]="{'full': collapsed}">
+        <div>
+            <button type="button" id="sidebarCollapse" (click)="collapseMenu()" class="btn-collapsed">
+                <span>
+                    <i *ngIf="collapsed" style="font-size: 20px;cursor: pointer;" class="fa fa-bars"></i>
+                    <i *ngIf="!collapsed" style="font-size: 20px;cursor: pointer;" class="fa-solid fa-angles-left"></i>
+                </span>
+            </button>
+        </div>
+        <div>
+            <div class="dropdown-custom">
+                <button  class="dropbtn" (click)="openMenu($event)"> <span class="nickname">{{username}}</span> <i class="fa fa-user-circle"></i></button>
+                <div  class="dropdown-content" [class.show]="dropdownActive=='user'">
+                    <!-- <div class="tag-username"></div> -->
+                    <div class="status-dropdown" >Activo <span class="green"></span> </div>
+                    <a class="link-dropdown">Perfil</a>
+                    <a (click)="logout()"   class="link-dropdown">Cerrar Sesión</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>

@@ -1,0 +1,24 @@
+<nav class="navbar fixed" id="navbar" [ngClass]="{'fixed': pageScroll}">
+    <div class="title">
+        <h3 class="mb-0">GEVDESIGNS</h3>
+    </div>
+    <div class="sections">
+        <div class="collapse navbar-collapse show" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Categorias
+                </a>
+                <!-- Here's the magic. Add the .animate and .slideIn classes to your .dropdown-menu and you're all set! -->
+                <div class="dropdown-menu dropdown-menu-end animate slideIn shadow-lg" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">SVG</a>
+                  <a class="dropdown-item" href="#">JPG / PNG</a>
+                  <a class="dropdown-item" href="#">VECTORES</a>
+                  <!-- <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#">Something else here</a> -->
+                </div>
+              </li>
+            </ul>
+        </div>
+    </div>
+</nav>
