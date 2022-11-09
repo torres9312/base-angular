@@ -7,8 +7,6 @@ import { FooterComponent } from './components/footer/footer.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { MainComponent } from './main/main.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { ListadoImagenesComponent } from './imagenes/listado/listado-imagenes.component';
-import { FormularioImagenesComponent } from './imagenes/formulario/formulario-imagenes.component';
 
 
 
@@ -19,9 +17,7 @@ import { FormularioImagenesComponent } from './imagenes/formulario/formulario-im
     FooterComponent,
     NavbarComponent,
     MainComponent,
-    DashboardComponent,
-    ListadoImagenesComponent,
-    FormularioImagenesComponent
+    DashboardComponent
   ],
   imports: [
     CommonModule,

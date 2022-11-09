@@ -18,7 +18,6 @@ const routes: Routes = [
       component: MainComponent,
       children :[
         { path: 'dashboard', component: DashboardComponent},
-        { path: 'imagenes', component: ListadoImagenesComponent},
       ]
     }
 

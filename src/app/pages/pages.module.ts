@@ -12,8 +12,7 @@ import { FooterComponent } from './components/footer/footer.component';
     IndexComponent,
     MainComponent,
     NavbarComponent,
-    FooterComponent,
-    ModalComponent
+    FooterComponent
   ],
   imports: [
     CommonModule,
