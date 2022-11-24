@@ -38,7 +38,7 @@ export class SidebarComponent implements OnInit {
     if(window.innerWidth <= 856){
       this.collapsed = true;
       this.collapseService.collapseMenu(this.collapsed);
-      let maincontent = document.getElementById('main-content');
+      let maincontent = document.getElementById('main-content-admin');
       if(!maincontent?.classList.contains('full-width')){
         maincontent?.classList.add('full-width');
       }else{
