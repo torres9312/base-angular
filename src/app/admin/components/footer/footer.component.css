@@ -14,11 +14,14 @@ footer .content-footer{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 100%;
+    font-size: 12px;
 }
 
-footer .content-footer p{
-    font-size: 14px;
-    font-weight: 600;
+footer .content-footer span{
+    font-size: 12px;
+    /* font-weight: 600; */
     margin-bottom: 0;
+    text-align: center;
 }
